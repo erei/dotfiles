@@ -1,0 +1,29 @@
+[colors]
+background = #040A07
+background-alt = #040A07
+foreground = #8AD1B1
+foreground-alt = #1A4733
+primary = #48C78E
+secondary = #2F473C
+alert = #ff3860
+
+[bar/main]
+width = 100%
+height = 27
+radius = 0.0
+fixed-center = false
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+tray-position = none
+
+line-size = 3
+
+font-0 = Noto Sans Mono:style=Regular
+
+locale = en_US.UTF-8
+
+modules-left = i3
+
+wm-restack = i3
