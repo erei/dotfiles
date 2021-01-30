@@ -181,5 +181,8 @@ for_window [class=".*"] border pixel 0
 # gaps
 gaps inner 10
 
+# picom
+exec_always --no-startup-id picom -b
+
 # wallpapers
 exec_always --no-startup-id feh --no-fehbg --bg-scale --randomize ~/img/wallpaper/* &
