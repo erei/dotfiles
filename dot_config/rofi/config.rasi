@@ -1,0 +1,7 @@
+configuration {
+	modi: "run";
+	font: "Noto Sans Mono 12";
+	combi-modi: "";
+}
+
+@theme "sludge-fiend"

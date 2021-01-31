@@ -1,0 +1,170 @@
+* {
+	background: #040A07;
+	background-alt: #040A07;
+	foreground: #8AD1B1;
+	foreground-alt: #2F473C;
+
+	background-color: var(background);
+
+	spacing: 2;
+}
+
+element {
+	padding: 1px;
+	spacing: 5px;
+	border: 0;
+}
+
+element normal.normal {
+	background-color: var(background);
+	text-color: var(foreground);
+}
+
+element normal.urgent {
+	background-color: var(background);
+	text-color: var(foreground);
+}
+
+element normal.active {
+	background-color: var(background);
+	text-color: var(foreground-alt);
+}
+
+element selected.normal {
+	background-color: var(background);
+	text-color: var(foreground-alt);
+}
+
+element selected.urgent {
+	background-color: var(background);
+	text-color: var(foreground-alt);
+}
+
+element selected.active {
+	background-color: var(background);
+	text-color: var(foreground-alt);
+}
+
+element alternate.normal {
+	background-color: var(background);
+	text-color: var(foreground);
+}
+
+element alternate.urgent {
+	background-color: var(background);
+	text-color: var(foreground);
+}
+
+element alternate.active {
+	background-color: var(background);
+	text-color: var(foreground-alt);
+}
+
+element-text {
+	background-color: rgba (0, 0, 0, 0%);
+	text-color: inherit;
+	highlight: inherit;
+}
+
+element-icon {
+	background-color: rgba (0, 0, 0, 0%);
+	size: 1.0000em;
+	text-color: inherit;
+}
+
+window {
+	padding: 5;
+	background-color: var(background);
+	border: 1;
+}
+
+mainbox {
+	padding: 0;
+	border: 0;
+}
+
+message {
+	padding: 1px;
+	border-color: var(foreground-alt);
+	border: 2px dash 0px 0px;
+}
+
+textbox {
+	text-color: var(foreground);
+}
+
+listview {
+	padding: 2px 0px 0px;
+	scrollbar: true;
+	border-color: var(foreground-alt);
+	spacing: 2px;
+	fixed-height: 0;
+	border: 2px dash 0px 0px;
+}
+
+scrollbar {
+	width: 4px;
+	padding: 0;
+	handle-width: 8px;
+	border: 0;
+	handle-color: var(foreground);
+}
+
+sidebar {
+	border-color: var(foreground-alt);
+	border: 2px dash 0px 0px;
+}
+
+button {
+	spacing: 0;
+	border: 2px dash 0px 0px;
+}
+
+button selected {
+	background-color: var(background);
+	text-color: var(foreground-alt);
+}
+
+num-filtered-rows, num-rows {
+	text-color: var(foreground-alt);
+	expand: false;
+}
+
+textbox-num-sep {
+	text-color: var(foreground-alt);
+	expand: false;
+	str: "/";	
+}
+
+inputbar {
+	padding: 1px;
+	spacing: 0px;
+	text-color: var(foreground);
+	children: [prompt,textbox-prompt-colon,entry,num-filtered-rows,textbox-num-sep,num-rows,case-indicator];
+}
+
+case-indicator {
+	spacing: 0;
+	text-color: var(foreground);
+}
+
+entry {
+	spacing: 0;
+	text-color: var(foreground);
+	placeholder-color: var(foreground-alt);
+	placeholder: "Type to filter";
+}
+
+prompt {
+	spacing: 0;
+	text-color: var(foreground);
+}
+
+textbox-prompt-colon {
+	margin: 0px 0.3000em 0.0000em 0.0000em;
+	expand: false;
+	str: ":";
+	text-color: inherit;
+}
+
+
